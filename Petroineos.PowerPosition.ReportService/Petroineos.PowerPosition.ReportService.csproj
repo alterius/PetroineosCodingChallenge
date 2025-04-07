@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="NCrontab" Version="3.3.3" />
+    <PackageReference Include="Polly" Version="8.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PowerService">
+      <HintPath>..\PowerService.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
